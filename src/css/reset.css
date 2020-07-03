@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* 清除标签默认的margin值和padding值 */
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input,
+table,
+figure{
+    margin: 0;
+    padding:0;
+}
+body{
+    font-size:16px;
+    font-family:"微软雅黑";
+}
+ul,ol,li{
+    list-style:none;
+}
+b,strong{
+    font-weight:normal;
+}
+i,em{
+    font-style:normal;
+}
+a,u{
+    text-decoration:none;
+}
+a{
+    color:inherit;
+    outline: none;
+    blr:expression(this.onFocus=this.blur());
+}
+h1,h2,h3,h4,h5,h6{
+    font-size:16px;
+    font-weight:normal;
+}
+input,select,button,textarea{
+    outline:none;
+    border:none;
+}
+img{
+    display:block;
+    border:0;
+}
+fieldset{
+    border:0;
+}
+textarea{
+    resize:none;
+}
+
+
+
+/* 类名封装 */
+/* 清除边框类名 */
+.noborder-l{
+    border-left:none!important;
+}
+.noborder-r{
+    border-right:none!important;
+}
+/* 清除背景的类名 */
+.bg-none{
+    background:none!important;
+}
+/* 单行文本省略号显示类名 */
+.text-ellipsis{
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+/* 元素在浏览器窗口居中 */
+.fixed-center{
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:0 auto;
+}
+/* 元素在父元素中上下左右居中 */
+.dom-center{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+}
+/* float*/
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+
+/* 清除浮动 */
+.clear-fix::after{
+    content:" ";
+    height:0;
+    display: block;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+.clear-fix{
+    zoom:1;
+}
